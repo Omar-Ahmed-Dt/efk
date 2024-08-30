@@ -12,19 +12,19 @@ eksctl create cluster --name=eks-cluster \
 ```
 - **Create efk Namespace**
 ```bash
-k create ns efk
+kubectl create ns efk
 ```
 - **Deploy ElasticSearch**
 ```bash
 cd elasticsearch-kibana
-k apply -f es-pvolume.yaml
-k apply -f es-service.yaml
-k apply -f es-statefulset.yaml
+kubectl apply -f es-pvolume.yaml
+kubectl apply -f es-service.yaml
+kubectl apply -f es-statefulset.yaml
 ```
 - **Deploy Kibana** : The Elastic Search and Kibana version should be the matching version
 ```bash
-k apply -f kinana-service.yaml
-k apply -f kibana-deployment.yaml
+kubectl apply -f kinana-service.yaml
+kubectl apply -f kibana-deployment.yaml
 ```
 ![efk](./imgs/efk.png)
 ---
@@ -33,23 +33,23 @@ k apply -f kibana-deployment.yaml
 ![efk](./imgs/query.png)
 **Scaling Elasticsearch and Kibana**
 ```bash
-k get svc -n efk
+kubectl get svc -n efk
 cd scaling-ek-stack
 ```
 - update `kibana.yml` with the URL
 - update `config-map.yml` with the URL
 ![efk](./imgs/url.png)
 ```bash
-k get node
-k label nodes <node name> app=elasticsearch
-k apply -f .
+kubectl get node
+kubectl label nodes <node name> app=elasticsearch
+kubectl apply -f .
 ```
 **Deploying E-Commerce App**
 ```bash
 cd ../../event-generator
-k apply -f . 
-k logs app-event-simulator -n efk -f
-k logs fluent-bit-kp9hr -n efk
+kubectl apply -f . 
+kubectl logs app-event-simulator -n efk -f
+kubectl logs fluent-bit-kp9hr -n efk
 ```
 
 
