@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kibana-config
+  namespace: efk
+data:
+  kibana.yml: |
+    server.port: 5601
+    server.host: "0.0.0.0"
+    elasticsearch.hosts: [ "http://ae38dc6bca0fb4fa0a0da63c0923f2ec-1420529347.us-east-1.elb.amazonaws.com:9200" ]
