@@ -3,8 +3,8 @@
 - [Create an amazon eks cluster and deploy ElasticSearch and Kibana](#create-an-amazon-eks-cluster)
 - [Scaling Elasticsearch and Kibana](#scaling-elasticsearch-and-kibana)
 - [Deploying E-Commerce App](#deploying-e-commerce-app)
-- [Dashboarding with KQL in Kibana and Conditional Appearance on The Dashboard](#dashboarding-with-kql-in-kibana)
-- [Deploying Login App and Kibana on Kubernetes](#deploying-login-app-and-kibana-on-kubernetes)
+- [Dashboarding with KQL in Kibana and Conditional Appearance on The Dashboard](#dashboarding-with-kql-in-kibana-)
+- [Deploying Login App and Kibana on Kubernetes](#deploying-login-app-and-kibana-on-kubernetes-)
 
 ## Prerequisites
 - kubectl
