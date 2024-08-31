@@ -1,6 +1,6 @@
 # Install EFK Stack
 ## Workflow
-- [Create an amazon eks cluster and deploy ElasticSearch and Kibana](#create-an-amazon-eks-cluster)
+- [Create an amazon eks cluster and deploy ElasticSearch and Kibana](#create-an-amazon-eks-cluster-and-deploy-elasticsearch-and-kibana-)
 - [Scaling Elasticsearch and Kibana](#scaling-elasticsearch-and-kibana)
 - [Deploying E-Commerce App](#deploying-e-commerce-app)
 - [Dashboarding with KQL in Kibana and Conditional Appearance on The Dashboard](#dashboarding-with-kql-in-kibana-)
