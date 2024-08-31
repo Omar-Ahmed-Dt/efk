@@ -1,4 +1,5 @@
 # Install EFK Stack
+![efk](./imgs/loginapp_arch.png)
 ## Workflow
 - [Create an amazon eks cluster and deploy ElasticSearch and Kibana](#create-an-amazon-eks-cluster-and-deploy-elasticsearch-and-kibana-)
 - [Scaling Elasticsearch and Kibana](#scaling-elasticsearch-and-kibana)
@@ -98,11 +99,8 @@ kubectl logs <fluent pod name> -n efk
 ![efk](./imgs/k24.png)
 ![efk](./imgs/k25.png)
 ![efk](./imgs/k26.png)
+![efk](./imgs/k27.png)
 ![efk](./imgs/k28.png)
 ![efk](./imgs/k29.png)
 ![efk](./imgs/k30.png)
 ---
-### Deploying Login App and Kibana on Kubernetes : 
----
-![efk](./imgs/loginapp_arch.png)
-### testing
