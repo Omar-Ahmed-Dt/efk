@@ -23,10 +23,12 @@ kubectl apply -f es-statefulset.yaml
 ```
 - **Deploy Kibana** : The Elastic Search and Kibana version should be the matching version
 ```bash
-kubectl apply -f kinana-service.yaml
+kubectl apply -f kibana-service.yaml
 kubectl apply -f kibana-deployment.yaml
 ```
 ![efk](./imgs/efk.png)
+---
+![efk](./imgs/ui1.png)
 ---
 ![efk](./imgs/ui.png)
 ---
@@ -49,7 +51,41 @@ kubectl apply -f .
 cd ../../event-generator
 kubectl apply -f . 
 kubectl logs app-event-simulator -n efk -f
-kubectl logs fluent-bit-kp9hr -n efk
+kubectl get po -n efk
+kubectl logs <fluent pod name> -n efk
 ```
-
-
+![efk](./imgs/k1.png)
+![efk](./imgs/k2.png)
+![efk](./imgs/k3.png)
+![efk](./imgs/k4.png)
+![efk](./imgs/k5.png)
+![efk](./imgs/k6.png)
+![efk](./imgs/k7.png)
+![efk](./imgs/k8.png)
+---
+**Dashboarding with KQL in Kibana:**
+---
+![efk](./imgs/k9.png)
+![efk](./imgs/k10.png)
+![efk](./imgs/k11.png)
+![efk](./imgs/k12.png)
+![efk](./imgs/k13.png)
+![efk](./imgs/k14.png)
+![efk](./imgs/k15.png)
+![efk](./imgs/k16.png)
+![efk](./imgs/k18.png)
+![efk](./imgs/k19.png)
+![efk](./imgs/k20.png)
+![efk](./imgs/k21.png)
+![efk](./imgs/k22.png)
+![efk](./imgs/k23.png)
+---
+**Conditional Appearance on Kibana Dashboards:**
+---
+![efk](./imgs/k24.png)
+![efk](./imgs/k25.png)
+![efk](./imgs/k26.png)
+![efk](./imgs/k28.png)
+![efk](./imgs/k29.png)
+![efk](./imgs/k30.png)
+---
